@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="designer" content="Valérie Le Testu">
+    <meta name="developer" content="Aurélie Gilet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/nostimia.css">
+    <title>Nostimia</title>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img class="logo" src="assets/img/Logo.png" alt="Logo du restaurant Nostimia">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#carte">CARTE</a></li>
+            <li><a href="#avis">AVIS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="burger-menu">
+        <div class="burger-icon" id="burger-btn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="burger-nav">
+            <li><a href="#carte">CARTE</a></li>
+            <div class="line"></div>
+            <li><a href="#avis">AVIS</a></li>
+            <div class="line"></div>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+    </div>
+    <aside class="commander">
+        <p>Nostimia vous propose de découvrir et déguster des pâtisseries grecques sucrées et salées.</p>
+        <p>Commander dès maintenant en ligne grâce à <br> <a href="https://www.takeaway.com/be/menu/nostimia"><img class="logo-takeaway" src="assets/img/takeaway.png" alt="Logo du site Takeaway.com"></a></p>
+        <a href="https://www.takeaway.com/be/menu/nostimia" class="takeout-button">COMMANDER</a>
+        <a id="next" href="#carte">
+            <img src="assets/img/stroke.svg" alt="flèche vers le bas">
+            <img src="assets/img/stroke.svg" alt="flèche vers le bas">
+        </a>
+    </aside>
+    <main>
+        <section id="carte" class="menu">
+            <div class="title">
+                <h2>NOTRE CARTE</h2>
+                <div class="shadow"></div>
+            </div>
+            <div id="mobile-select" class="custom-select-wrapper">
+                <div class="custom-select">
+                    <div class="custom-select__trigger"><span>peinirlis</span>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="custom-options">
+                        <span class="custom-option" data-value="ventes">meilleures ventes</span>
+                        <div class="line"></div>
+                        <span class="custom-option selected" data-value="peinirlis" selected>peinirlis</span>
+                        <div class="line"></div>
+                        <span class="custom-option" data-value="salades">salades</span>
+                        <div class="line"></div>
+                        <span class="custom-option" data-value="sales">délices salés</span>
+                        <div class="line"></div>
+                        <span class="custom-option" data-value="sucres">délices sucrés</span>
+                        <div class="line"></div>
+                        <span class="custom-option" data-value="cafe">café froid</span>
+                        <div class="line"></div>
+                        <span class="custom-option" data-value="boissons">boissons</span>
+                        <div class="line"></div>
+                        <span class="custom-option" data-value="bieres">bières</span>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop-menu">
+                <div id="desktop-select">
+                    <span class="desktop-custom-option" data-value="ventes">meilleures ventes</span>
+                    <span class="desktop-custom-option selected" data-value="peinirlis" selected>peinirlis</span>
+                    <span class="desktop-custom-option" data-value="salades">salades</span>
+                    <span class="desktop-custom-option" data-value="sales">délices salés</span>
+                    <span class="desktop-custom-option" data-value="sucres">délices sucrés</span>
+                    <span class="desktop-custom-option" data-value="cafe">café froid</span>
+                    <span class="desktop-custom-option" data-value="boissons">boissons</span>
+                    <span class="desktop-custom-option" data-value="bieres">bières</span>
+                </div>
+                <div class="categories">
+                    <article id="ventes">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">salade grecque</h3>
+                                <p class="price">8,00€</p>
+                            </div>
+                            <p class="description">Concombres, tomates, poivrons verts, oignons rouges, olives, feta, piments verts</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">peinirli katsikisio</h3>
+                                <p class="price">5,50€</p>
+                            </div>
+                            <p class="description">Mozzarella, fromage de chèvre, miel, noix</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">le bowl de zeus</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                            <p class="description">Pâtes grecques, tomates, concombres, maïs, oignons rouges, halloumi, tzatziki</p>
+                        </div>
+                    </article>
+                    <article id="peinirlis">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">peinirli classique</h3>
+                                <p class="price">4,50€</p>
+                            </div>
+                            <p class="description">Mozzarella, origan</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">peinirli méditérranéen</h3>
+                                <p class="price">5,00€</p>
+                            </div>
+                            <p class="description">Mozzarella, tomates, olives, poivrons, origan</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">peinirli oeuf</h3>
+                                <p class="price">5,00€</p>
+                            </div>
+                            <p class="description">Mozzarella, oeuf</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">peinirli troufas</h3>
+                                <p class="price">6,50€</p>
+                            </div>
+                            <p class="description">Mozzarella, champignons, crème de truffe, pousses d'épinards</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">peinirli rigani</h3>
+                                <p class="price">5,00€</p>
+                            </div>
+                            <p class="description">Mozzarella, saucisses fumées à l'origan, origan</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">peinirli katsikisio</h3>
+                                <p class="price">6,50€</p>
+                            </div>
+                            <p class="description">Mozzarella, fromage de chèvre, miel, noix</p>
+                        </div>
+                    </article>
+                    <article id="salades">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">salade grecque</h3>
+                                <p class="price">8,00€</p>
+                            </div>
+                            <p class="description">Concombres, tomates, poivrons verts, oignons rouges, olives, feta, piments verts</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">le bowl de zeus</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                            <p class="description">Pâtes grecques, tomates, concombres, maïs, oignons rouges, halloumi, tzatziki</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">le bowl d'arès</h3>
+                                <p class="price">9,90€</p>
+                            </div>
+                            <p class="description">Pâtes grecques, tomates, haricots rouges, aubergines grillées, poivrons verts, blancs de poulet, tirokafteri, oignons secs</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">le bowl de déméter</h3>
+                                <p class="price">10,30€</p>
+                            </div>
+                            <p class="description">Pâtes grecques, courgettes grillées, carottes, maïs, concombres, pois chiches, oeufs, moutarde & miel, noix</p>
+                        </div>
+                    </article>
+                    <article id="sales">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">loukanikopita</h3>
+                                <p class="price">4,00€</p>
+                            </div>
+                            <p class="description">Feuilleté à la saucisse</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">spanakopita</h3>
+                                <p class="price">4,00€</p>
+                            </div>
+                            <p class="description">Feuilleté feta épinards</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">bougatsa fromage</h3>
+                                <p class="price">4,00€</p>
+                            </div>
+                            <p class="description">Pâte filo au fromage</p>
+                        </div>
+                    </article>
+                    <article id="sucres">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">baklava</h3>
+                                <p class="price">4,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">kadaifi</h3>
+                                <p class="price">4,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">bougatsa crème</h3>
+                                <p class="price">4,00€</p>
+                            </div>
+                            <p class="description">Pâte filo avec de la crème pâtissière à base de semoule de blé</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">koulouri tiri</h3>
+                                <p class="price">4,00€</p>
+                            </div>
+                            <p class="description">Pain sésame fromage</p>
+                        </div>
+                    </article>
+                    <article id="cafe">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">café frappé</h3>
+                                <p class="price">3,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">café frappé boule vanille</h3>
+                                <p class="price">3,50€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">freddo espresso</h3>
+                                <p class="price">3,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">freddo cappuccino</h3>
+                                <p class="price">3,50€</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="boissons">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">eau plate (50 cl)</h3>
+                                <p class="price">1,80€</p>
+                            </div>
+                            <p class="description">Udor</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">eau pétillante (25 cl)</h3>
+                                <p class="price">2,20€</p>
+                            </div>
+                            <p class="description">Souroti</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">eau pétillante citron (33 cl)</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">coca-cola (33 cl)</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">coca-cola zéro (33 cl)</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">fanta (33 cl)</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">sprite (33 cl)</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">epsa orange (33 cl)</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                            <p class="description">Soda grec</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">epsa citron (33 cl)</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                            <p class="description">Soda grec</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">epsa pink limonade (33 cl)</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                            <p class="description">Soda grec</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">epsa cola stévia (33 cl)</h3>
+                                <p class="price">2,20€</p>
+                            </div>
+                            <p class="description">Soda grec</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">epsa thé pêche (33 cl)</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">epsa thé citron (33 cl)</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">epsa thé vert (33 cl)</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="bieres">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">fix (33 cl)</h3>
+                                <p class="price">3,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">mythos (33 cl)</h3>
+                                <p class="price">3,00€</p>
+                            </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="avis" class="avis">
+            <div class="title">
+                <h2>AVIS</h2>
+                <div class="shadow"></div>
+            </div>
+            <p class="note">Noté sur <a href="https://www.takeaway.com/be-fr/menu/nostimia#avis"><img class="logo-takeaway" src="assets/img/takeaway.png" alt="Logo du site Takeaway.com"></a></p>
+        </section>
+
+        <section  id="contact" class="contact">
+            <div class="title">
+                <h2>CONTACT</h2>
+                <div class="shadow"></div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.716892077706!2d4.4407924855902!3d50.40911354826063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2260abf4d024f%3A0xaaeb3eba057fded1!2sRue%20de%20Dampremy%2049%2C%206000%20Charleroi%2C%20Belgique!5e0!3m2!1sfr!2sfr!4v1624349909734!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="false" loading="lazy"></iframe>
+            <div class="contact-infos">
+                <div class="desktop-left">
+                    <div class="infos">
+                        <h3>adresse</h3>
+                        <img src="assets/img/home.png" alt="icone de maison">
+                        <p>Rue de Dampremy 49,<br>6000 Charleroi, Belgique</p>
+                    </div>
+                    <div class="infos">
+                        <h3>téléphone</h3>
+                        <img src="assets/img/call.png" alt="icone de téléphone">
+                        <p>+32 71 97 37 43</p>
+                    </div>
+                </div>
+                <div class="desktop-right infos">
+                    <h3>horaires</h3>
+                    <img src="assets/img/clock.png" alt="icone d'horloge">
+                    <div class="hours">
+                        <p class="day"><span>Lundi</span><span class="closed">fermé</span></p>
+                        <p class="day"><span>Mardi</span><span>10:00 - 18:00</span></p>
+                        <p class="day"><span>Mercredi</span><span>10:00 - 18:00</span></p>
+                        <p class="day"><span>Jeudi</span><span>10:00 - 18:00</span></p>
+                        <p class="day"><span>Vendredi</span><span>10:00 - 18:00</span></p>
+                        <p class="day"><span>Samedi</span><span>10:00 - 18:00</span></p>
+                        <p class="day"><span>Dimanche</span><span class="closed">fermé</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button class="go-top-btn" id="top-btn">
+            <img src="assets/img/stroke.svg" alt="Icone de flèche">
+        </button>
+    </main>
+    <footer>
+        <div class="facebook">
+            <a href="https://www.facebook.com/nostimiacharleroi">
+                <img src="assets/img/facebook.png" alt="Icone Facebook">
+                <p>Rejoignez-nous sur notre Facebook</p>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>Nostimia | Mentions légales</p>
+        </div>
+    </footer>
+    <script src="assets/js/nostimia.js"></script>
+</body>
+</html>

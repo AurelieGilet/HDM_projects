@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="designer" content="Valérie Le Testu">
+    <meta name="developer" content="Aurélie Gilet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/pizza-marco.css">
+    <title>Pizza Marco</title>
+</head>
+<body>
+    <header>
+        <div class="header-italian-stripes">
+            <div class="stripe green-stripe"></div>
+            <div class="stripe white-stripe"></div>
+            <div class="stripe red-stripe"></div>
+        </div>
+        <img class="logo" src="assets/img/Logo.png" alt="Logo de Pizza Marco">
+        <h1 class="main-title">pizzeria</h1>
+    </header>
+    <nav>
+        <div class="burger-icon" id="burger-btn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="burger-nav">
+            <li><a href="#carte">CARTE</a></li>
+            <li><a href="#avis">AVIS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <aside class="commander">
+        <p>Pizza cuites au feu de bois sur place ou à emporter !</p>
+        <p>Commander tout de suite sur <br> <a href="https://www.takeaway.com/be-fr/menu/pizza-marco"><img class="logo-takeaway" src="assets/img/takeaway.png" alt="Logo du site Takeaway.com"></a></p>
+        <a href="https://www.takeaway.com/be-fr/menu/pizza-marco" class="takeout-button">COMMANDER</a>
+        <img class="left-pizza" src="assets/img/pizza-left.png" alt="illustration Pizza sur une planche en bois">
+        <img class="right-pizza" src="assets/img/pizza-right.png" alt="illustration Pizza sur une planche en bois">
+    </aside>
+    <main>
+        <section id="carte" class="carte">
+            <div class="title">
+                <h2>NOTRE CARTE</h2>
+                <div class="section-italian-stripes">
+                    <div class="section-stripe green-stripe"></div>
+                    <div class="section-stripe white-stripe"></div>
+                    <div class="section-stripe red-stripe"></div>
+                </div>
+            </div>
+            <img class="big-left-pizza" src="assets/img/big-pizza-left.png" alt="illustration de pizza">
+            <div class="menu">
+                <div class="custom-select-wrapper">
+                    <div class="custom-select">
+                        <div class="custom-select__trigger">
+                            <span>pizzas</span>
+                            <div class="arrow"></div>
+                        </div>
+                        <div class="custom-options">
+                            <span class="custom-option" data-value="ventes">meilleures ventes</span>
+                            <div class="line"></div>
+                            <span class="custom-option selected" data-value="pizzas" selected>pizzas</span>
+                            <div class="line"></div>
+                            <span class="custom-option" data-value="speciales">pizzas spéciales</span>
+                            <div class="line"></div>
+                            <span class="custom-option" data-value="blanches">pizzas blanches</span>
+                            <div class="line"></div>
+                            <span class="custom-option" data-value="tomates">pizzas tomates</span>
+                            <div class="line"></div>
+                            <span class="custom-option" data-value="pates">pâtes</span>
+                            <div class="line"></div>
+                            <span class="custom-option" data-value="specialites">spécialités</span>
+                            <div class="line"></div>
+                            <span class="custom-option" data-value="desserts">desserts</span>
+                            <div class="line"></div>
+                            <span class="custom-option" data-value="boissons">boissons</span>
+                            <div class="line"></div>
+                            <span class="custom-option" data-value="vin">vin 75cl</span>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories">
+                    <article id="ventes">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza margherita</h3>
+                                <p class="price">8,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza 4 fromages</h3>
+                                <p class="price">10,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, fontina, gorgonzola, parmesan</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza diavola</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, salami piquant</p>
+                        </div>
+                    </article>
+                    <article id="pizzas">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza focaccia</h3>
+                                <p class="price">7,50€</p>
+                            </div>
+                            <p class="description">Tomate, huile d'olive, ail, origan</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza foccaciona</h3>
+                                <p class="price">7,50€</p>
+                            </div>
+                            <p class="description">Huile d'olive, sel origan</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza margherita</h3>
+                                <p class="price">8,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza prosciutto</h3>
+                                <p class="price">9,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, jambon</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza pepperoni</h3>
+                                <p class="price">9,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, poivrons</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza lardière</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, lardons, oignons</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza napolitaine</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, anchois, olives, câpres</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza sicilienne</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, anchois, olives, câpres, poivrons</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza champignons</h3>
+                                <p class="price">9,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, champignons</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza rimini</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, jambon, champignons</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza campagnola</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, jambon, oignons</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza bolognaise</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                            <p class="description">Sauce bolognaise, mozzarella</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza chèvre</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, fromage de chèvre, lardons</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza capricieuse</h3>
+                                <p class="price">10,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, champignons, artichauts, pancetta, poivrons, oeuf</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza baltica</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, thon, oignons</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza diavola</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, salami piquant</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza 4 saisons</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, jambon, champignons, artichauts, câpres, olives</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza 4 fromages</h3>
+                                <p class="price">10,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, fontina, gorgonzola, parmesan</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza romana</h3>
+                                <p class="price">11,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, jambon de Parme, oignons</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza parma</h3>
+                                <p class="price">10,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, jambon de Parme</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza calzone</h3>
+                                <p class="price">10,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, jambon, champignons, salami piquant</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza della mamma</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, jambon, anchois</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza hawaïenne</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, jambon, ananas</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza piemontèse</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, oignons, lardons, olives</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza végétarienne</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, assortiment de légumes</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza genova</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, salami genova</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza marco</h3>
+                                <p class="price">11,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, jambon, champignons, salami piquant, artichauts, olives</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza merguez</h3>
+                                <p class="price">10,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, merguez, poivrons</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza rustique</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, bacon, oignons, oeuf</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza pastur</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, oeuf battu, lardons</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza delli'aria</h3>
+                                <p class="price">11,00€</p>
+                            </div>
+                            <p class="description">Crème fraîche, mozzarella, oignons, chèvre, lardons, champignons</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza tiziana</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                            <p class="description">Pomme de terre, oignons cuit, sel</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza l'abruzzese</h3>
+                                <p class="price">11,00€</p>
+                            </div>
+                            <p class="description">Pomme de terre, oignons cuit, lardons, saucisse italienne</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza luca</h3>
+                                <p class="price">11,00€</p>
+                            </div>
+                            <p class="description">Crème fraîche, mozzarella, bacon, champignons, chèvre, oignons</p>
+                        </div>
+                    </article>
+                    <article id="speciales">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza pazza</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">Aubergines, oignons, parmesan</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza scampis</h3>
+                                <p class="price">12,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, scampis, huile à l'ail<p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza marinara</h3>
+                                <p class="price">11,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, fruits de mer</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza parmigiana</h3>
+                                <p class="price">10,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, aubergines fraîches, parmesan</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza salsiccia</h3>
+                                <p class="price">11,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, saucisse italienne</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza cavalcade</h3>
+                                <p class="price">10,50€</p>
+                            </div>
+                            <p class="description">Crème fraîche, mozzarella, pommes de terre, lardons, fromage à raclette, bacon</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza taormina</h3>
+                                <p class="price">11,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, jambon de Parme, roquette</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza franco</h3>
+                                <p class="price">11,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, jambon, saucisse italienne</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza pita</h3>
+                                <p class="price">12,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, pita poulet, sauce à l'ail</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza bufala</h3>
+                                <p class="price">14,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella di bufala</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza frite</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, frites</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza wurstel</h3>
+                                <p class="price">11,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, saucisse wurstel</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza saumon</h3>
+                                <p class="price">13,50€</p>
+                            </div>
+                            <p class="description">Crème fraîche, mozzarella, saumon fumé</p>
+                        </div>
+                    </article>
+                    <article id="blanches">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza adriano</h3>
+                                <p class="price">14,50€</p>
+                            </div>
+                            <p class="description">Mozzarella, Parme, tomates cerises, roquette, copeaux de parmesan</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza aleandro</h3>
+                                <p class="price">12,50€</p>
+                            </div>
+                            <p class="description">Mozzarella, aubergines, salami piquant</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza etna</h3>
+                                <p class="price">11,50€</p>
+                            </div>
+                            <p class="description">Mozzarella, jambon, champignons, salami piquant</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza la golosa</h3>
+                                <p class="price">15,50€</p>
+                            </div>
+                            <p class="description">Mozzarella, scampis, aubergines, tomates cerises</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza contadina</h3>
+                                <p class="price">13,50€</p>
+                            </div>
+                            <p class="description">Mozzarella, jambon, anchois, poivrons, oignons, oeuf</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza truffes</h3>
+                                <p class="price">15,50€</p>
+                            </div>
+                            <p class="description">Mozzarella, champignons, truffes</p>
+                        </div>
+                    </article>
+                    <article id="tomates">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza crudo</h3>
+                                <p class="price">14,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, Parme, tomates cerises, roquette, copeaux de parmesan</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza pugliese</h3>
+                                <p class="price">14,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, saucisse italienne, ricotta</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza serena</h3>
+                                <p class="price">12,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, Parme, ricotta</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza mafiosa</h3>
+                                <p class="price">12,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, jambon, champignons, lardons, oignons, oeuf</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza gomorra</h3>
+                                <p class="price">15,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, aubergines, scampis, roquette, copeaux de parmesan</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">pizza rocco</h3>
+                                <p class="price">12,50€</p>
+                            </div>
+                            <p class="description">Tomate, mozzarella, pommes de terre, oignons, lardons, oeuf</p>
+                        </div>
+                    </article>
+                    <article id="pates">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">bolognaise</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">carbonara</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">arrabiata</h3>
+                                <p class="price">9,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">persto</h3>
+                                <p class="price">9,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">4 fromages</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">scampis</h3>
+                                <p class="price">11,50€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">jambon crème</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">fruits de mer</h3>
+                                <p class="price">11,50€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">thon</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="specialites">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">lasagne maison</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">cannelloni bolognaise maison</h3>
+                                <p class="price">10,50€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">cannelloni épinard ricotta maison</h3>
+                                <p class="price">10,50€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">tortellini épinard ricotta maison</h3>
+                                <p class="price">10,50€</p>
+                            </div>
+                        </div>                        
+                    </article>
+                    <article id="desserts">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">tiramisu maison</h3>
+                                <p class="price">4,50€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">fondant au chocolat maison</h3>
+                                <p class="price">4,50€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">chausson nutella maison par deux</h3>
+                                <p class="price">9,50€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">tiramisu spéculos</h3>
+                                <p class="price">5,00€</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="boissons">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">jupiler</h3>
+                                <p class="price">2,50€</p>
+                            </div>
+                            <p class="description">5,20% vol</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">coca cola</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                            <p class="description">Contient de la caféine (9,60 mg/100 ml)</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">coca zéro</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">fanta</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">sprite</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">eau</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">eau pétillante</h3>
+                                <p class="price">2,00€</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="vin">
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">vin blanc</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">9,70% vol</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">vin rouge</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">10,00% vol</p>
+                        </div>
+                        <div class="item">
+                            <div class="name-price">
+                                <p class="name">vin rosé</h3>
+                                <p class="price">10,00€</p>
+                            </div>
+                            <p class="description">8,70% vol</p>
+                        </div>                    
+                    </article>
+                    <img class="big-right-pizza" src="assets/img/big-pizza-right.png" alt="illustration de pizza">
+                </div>
+            </div>
+        </section>
+        <section id="avis" class="avis">
+            <div class="title">
+                <h2>AVIS</h2>
+                <div class="section-italian-stripes">
+                    <div class="section-stripe green-stripe"></div>
+                    <div class="section-stripe white-stripe"></div>
+                    <div class="section-stripe red-stripe"></div>
+                </div>
+            </div>
+            <p class="note">Noté sur <a href="https://www.takeaway.com/be-fr/menu/nostimia#avis"><img class="logo-takeaway" src="assets/img/takeaway.png" alt="Logo du site Takeaway.com"></a></p>
+        </section>
+        <section id="contact" class="contact">
+            <div class="title">
+                <h2>CONTACT</h2>
+                <div class="section-italian-stripes">
+                    <div class="section-stripe green-stripe"></div>
+                    <div class="section-stripe white-stripe"></div>
+                    <div class="section-stripe red-stripe"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="map">
+                    <img class="pizza-box" src="assets/img/pizza-box.png" alt="illustration de pizza dans une boite">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.6947804865836!2d4.409324863007508!3d50.39088807980281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c225b502e2d0a1%3A0xceb76ad428248fd5!2sAvenue%20Paul%20Pastur%20100%2C%206032%20Charleroi%2C%20Belgique!5e0!3m2!1sfr!2sfr!4v1624611255114!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contact-infos">
+                    <div class="infos">
+                        <h3><span>adresse</span> -</h3>
+                        <p>Avenue Paul Pastur 100,<br>6032 Charleroi, Belgique</p>
+                    </div>
+                    <div class="infos">
+                        <h3><span>téléphone</span> -</h3>
+                        <p><a href="">+32 71 36 34 29</a></p>
+                    </div>
+                    <div class="infos-horaires">
+                        <h3><span>horaire</span></h3>
+                        <div class="hours">
+                            <p class="day"><span>Lundi</span><span>11:30 - 14:00 | 18:00 - 23:00</span></p>
+                            <p class="day"><span>Mardi</span><span>11:30 - 14:00 | 18:00 - 23:00</span></p>
+                            <p class="day"><span>Mercredi</span><span>11:30 - 14:00 | 18:00 - 23:00</span></p>
+                            <p class="day"><span>Jeudi</span><span>18:00 - 23:00</span></p>
+                            <p class="day"><span>Vendredi</span><span>11:30 - 14:00 | 18:00 - 23:45</span></p>
+                            <p class="day"><span>Samedi</span><span>18:00 - 23:45</span></p>
+                            <p class="day"><span>Dimanche</span><span>18:00 - 23:00</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button class="go-top-btn" id="top-btn">
+            <img src="assets/img/stroke.png" alt="Icone de flèche">
+        </button>
+    </main>
+    <footer>
+        <div class="footer-italian-stripes">
+            <div class="stripe green-stripe"></div>
+            <div class="stripe white-stripe"></div>
+            <div class="stripe red-stripe"></div>
+        </div>
+        <div class="facebook">
+            <a href="https://www.facebook.com/pizzamarco2013">
+                <img src="assets/img/facebook.png" alt="Icone Facebook">
+                <p>Rejoignez-nous sur Facebook !</p>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>Pizza Marco | Mentions légales</p>
+        </div>
+    </footer>
+    <script src="assets/js/pizza-marco.js"></script>
+</body>
+</html>

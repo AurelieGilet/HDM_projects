@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Burnest';
+    src: url('../font/Burnest-RoundLight.otf');
+}
+
+body {
+    background-color: #BCC4D4;
+    background-image: url('../img/icones_bg.png');
+    background-position: center;
+    background-size: cover;
+    font-family: Lato, sans-serif;
+}
+
+h1 {
+    font-family: Burnest, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+/********** HEADER ***********/
+
+header {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 80%;
+    max-width: 374px;
+}
+
+/********** NAV ***********/
+
+#navbar {
+    margin: 10px 0 30px 0;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    font-family: Burnest;
+    font-size: clamp(1rem, 5vw, 25px);
+    text-transform: uppercase;    
+}
+
+#navbar li:nth-child(2n) {
+    border-width: 0 3px 0 3px;
+    border-style: solid;
+    border-color: #d9dde5;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/********** BANNER ***********/
+
+#mobile-banner {
+    width: 100%;
+}
+
+#mobile-banner img {
+    width: 100%;
+    height: auto;
+}
+
+#desktop-banner {
+    width: 100%;
+    display: none;
+    position: relative;
+}
+
+#desktop-banner img {
+    width: 50%;
+    height: auto;
+}
+
+#desktop-banner-description {
+    color: white;
+    width: 45%;
+    height: 35%;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#desktop-banner-description h2 {
+    font-size: clamp(1.1rem, 2vw, 25px);
+}
+
+#desktop-banner-description p {
+    font-size: clamp(1rem, 1.8vw, 22px);
+}
+
+/********** MAIN ***********/
+
+.container {
+    width: 90%;
+    min-height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider {
+    width: 35%;
+    border: 1px solid #d9dde5;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/********** SPECIALTIES ***********/
+/* ON MOBILE */
+.mobile-specialties {
+    width: 100%;
+}
+
+.mobile-specialties h1 {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.mobile-specialties li {
+    display: flex;
+    margin: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-specialties img {
+    width: 15%;
+    min-width: 45px;
+    height: auto;
+}
+
+.mobile-menu-description {
+    width: 85%;
+    padding-left: 10px;
+}
+
+.name-and-price {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.mobile-menu-description h2 {
+    font-size: clamp(0.8rem, 3vw, 20px);
+    margin-right: 4vw;
+}
+
+.mobile-menu-description p {
+    font-size: clamp(0.7rem, 2vw, 18px);
+    color: #51555f;
+    width: 60%;
+}
+
+.mobile-price {
+    font-size: clamp(0.8rem, 3vw, 20px);
+    white-space: nowrap;
+}
+
+/* ON DESKTOP */
+.desktop-specialties {
+    display: none;
+    width: 80%;
+}
+
+.desktop-specialties h1 {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.desktop-specialties ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 5px;
+}
+
+.desktop-specialties li {
+    position: relative;
+}
+
+.desktop-specialties img {
+    width: 100%;
+    height: auto;
+}
+
+.desktop-menu-description {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5px;
+}
+
+.desktop-menu-description h2 {
+    font-size: 1.8vw;
+    font-family: Burnest;
+    color: white;
+    padding-left: 5px;
+}
+
+.desktop-price {
+    font-size: 1.6vw;
+    color: white;
+    padding-right: 5px;
+}
+
+/********** BOOKING ***********/
+
+#reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#reservation h2 {
+    font-size: clamp(1rem, 2vw, 25px);
+    font-weight: bold;
+    padding: 10px;
+}
+
+#reservation p {
+    font-size: clamp(0.9rem, 1.8vw, 22px);
+    color: #51555f;
+    padding: 10px;
+}
+
+#reservation a {
+    width: 200px;
+    text-transform: uppercase; 
+    color: white;
+    line-height: 24px;
+    vertical-align: middle;
+    padding: 10px;
+    background-color: #949FB6;
+    border: 1px solid #d9dde5;
+    border-radius: 25px;
+    margin: 10px;
+}
+#reservation img {
+    width: 12%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+/********** FOOTER ***********/
+
+footer {
+    background-color: #949FB6;
+}
+
+#contact {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-infos, .bottom-infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.half {
+    width: 50%;
+    max-width: 150px;
+    display: flex;
+    margin: 10px;
+}
+
+.icon {
+    width: 12%;
+    min-width: 20px;
+    margin: 5px;
+}
+
+.icon img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    margin: 5px;
+}
+
+.content h2 {
+    font-size: 0.9rem;
+    color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.content p {
+    font-size: 0.6rem;
+    color: #51555f;
+}
+
+#copyright {
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/********** RESPONSIVE ***********/
+
+@media screen and (min-width: 768px) {
+    #logo {
+        width: auto;
+    }
+    #mobile-banner {
+        display: none;
+    }
+    #desktop-banner {
+        display: flex;
+    }
+    .mobile-specialties {
+        display: none;
+    }
+    .desktop-specialties {
+        display: block;
+    }
+    #contact {
+        width: 60%;
+        max-width:500px;
+    }
+    .half {
+        max-width: 200px;
+    }
+    .content h2 {
+        font-size: 1.1rem;
+    }
+    .content p {
+        font-size: 0.8rem;
+    }
+}

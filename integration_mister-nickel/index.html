@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
+    <meta name="designer" content="Ronan Lavigne" />
+    <meta name="developer" content="Aurélie Gilet" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>Mister Nickel</title>
+  </head>
+  <body>
+    <nav>
+      <div class="burger-icon" id="burger-btn">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <ul class="burger-nav">
+        <li class="active"><a href="index.html">ACCUEIL</a></li>
+        <li><a href="index.html#services">NOS SERVICES</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <header>
+      <img class="logo" src="assets/img/logo.png" alt="Logo de Mister Nickel" />
+      <img
+        class="logo-mobile"
+        src="assets/img/logo-mobile.png"
+        alt="Logo de Mister Nickel"
+      />
+    </header>
+    <aside>
+      <div class="card">
+        <div class="card-img">
+          <img
+            src="assets/img/ICON_nettoyage.png"
+            alt="Icône d'ustensils de nettoyage"
+          />
+        </div>
+        <div class="card-info">
+          <h3>Service de nettoyage</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugiat
+            quas eaque pariatur.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="assets/img/icon_aspi.png" alt="Icône d'aspirateur" />
+        </div>
+        <div class="card-info">
+          <h3>Lors de vos évènements</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugiat
+            quas eaque pariatur.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img
+            src="assets/img/ICON_bureaux.png"
+            alt="Icône d'immeubles de bureaux"
+          />
+        </div>
+        <div class="card-info">
+          <h3>Entretien de vos locaux</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugiat
+            quas eaque pariatur.
+          </p>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <section class="services-container">
+        <div class="banner"></div>
+        <article class="services-article">
+          <div id="services" class="title">
+            <h2>nos services</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              quas non.
+            </p>
+          </div>
+          <div class="services">
+            <div class="row top-row">
+              <div class="item">
+                <img src="assets/img/ICON_aspi2.png" alt="Icône d'aspirateur" />
+                <p>Nettoyage de tapis, moquettes, sièges</p>
+              </div>
+              <div class="item">
+                <img src="assets/img/ICON_maison.png" alt="Icône de maison" />
+                <p>
+                  Nettoyage de salon, matelas, tapis, siège de voiture et tous
+                  types de textile
+                </p>
+              </div>
+              <div class="item">
+                <img
+                  src="assets/img/ICON_rue.png"
+                  alt="Icône de camion nettoyeur"
+                />
+                <p>Nettoyage de trottoir, gouttière</p>
+              </div>
+            </div>
+            <div class="row bottom-row">
+              <div class="item">
+                <img
+                  src="assets/img/ICON_ventouse.png"
+                  alt="Icône de ventouse"
+                />
+                <p>Débouchage WC, canalisations, gouttières</p>
+              </div>
+              <div class="item">
+                <img
+                  src="assets/img/ICON_demenagement.png"
+                  alt="Icône de camion de déménagement"
+                />
+                <p>Déménagement maison, appartement</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div class="divider"></div>
+      <section class="contact-container">
+        <article class="intervention-article">
+          <h2>nous intervenons partout en belgique</h2>
+          <div class="content">
+            <div class="text-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis hic placeat doloremque, ex architecto perspiciatis
+                cupiditate.
+              </p>
+              <p>
+                Error nesciunt rerum delectus quam magnam aliquid, officia
+                atque, accusamus sapiente consequatur iure excepturi?
+              </p>
+            </div>
+            <img src="assets/img/belgique.png" alt="" />
+          </div>
+        </article>
+        <div class="divider"></div>
+        <article class="contact-article">
+          <h2>une mission à nous proposer ?</h2>
+          <p>Remplissez ce formulaire et on vous contactera très vite !</p>
+          <form method="POST" action="#">
+            <input
+              type="email"
+              name="email"
+              placeholder="Inscrivez votre adresse email"
+            />
+            <input
+              type="text"
+              name="phone"
+              placeholder="Inscrivez votre numéro de téléphone"
+            />
+            <textarea
+              name="message"
+              rows="10"
+              placeholder="Écrivez votre message"
+            ></textarea>
+            <button id="submit" type="submit">ENVOYER</button>
+          </form>
+        </article>
+      </section>
+    </main>
+    <button class="go-top-btn arrow" id="top-btn">
+      <img src="assets/img/stroke.svg" alt="Icône de flèche" />
+    </button>
+    <footer>
+      <p>MisterNickel.com | 2021 &copy; Tous droits réservés</p>
+    </footer>
+    <script src="assets/js/mister-nickel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,402 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/Lato-Regular.ttf');
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    background-color: #31455B;
+    font-family: Lato, sans-serif;
+    min-width: 320px;
+}
+
+h1, h2, nav li {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+/********* HEADER *********/
+
+header {
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.title-wraper {
+    width: 100%;
+    height: 100%;
+    background-color: #2128368e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-desktop {
+    display: none;
+}
+
+.main-title {
+    font-size: 1.8rem;
+    color: #F7F7F7;
+}
+
+/********** NAVBAR ***********/
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 330px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+nav li {
+    color: #F7F7F7;
+}
+
+nav li:nth-child(2n) {
+    border-width: 0 2px 0 2px;
+    border-style: solid;
+    border-color: #F7F7F7;
+    padding: 0 1rem;
+    margin: 0 1rem;
+}
+
+/********* MAIN *********/
+
+.divider {
+    width: 100%;
+    border-bottom: 1px solid #F7F7F7;
+}
+
+/* MENU */
+
+#menu {
+    display: flex;
+    justify-content: center;
+    height: 230px;
+    margin-bottom: 40px;
+}
+
+#soft-drink, #strong-drink {
+    width: 50%;
+    max-width: 650px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px 10px;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 0.9rem;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+#soft-drink {
+    background-image: url("../img/soft-drink.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#strong-drink {
+    background-image: url("../img/strong-drink.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#soft-drink-overlay, #strong-drink-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 7, 7, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;  
+}
+
+.soft-drink-wrapper, .strong-drink-wrapper {
+    width: 100%;
+    z-index: 3;
+}
+
+#soft-drink-list, #strong-drink-list {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.item p {
+    margin: 0 5px;
+}
+
+.show {
+    display: block !important;
+}
+
+/* BOOKING */
+
+#reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #212836;
+    color: white;
+}
+
+#reservation h2 {
+    font-size: clamp(1rem, 2vw, 25px);
+    font-weight: bold;
+    padding: 10px;
+}
+
+#reservation p {
+    font-size: clamp(0.9rem, 1.8vw, 22px);
+    padding: 10px;
+}
+
+#reservation a {
+    width: 200px;
+    text-transform: uppercase; 
+    color: white;
+    line-height: 24px;
+    vertical-align: middle;
+    padding: 10px;
+    border: 1px solid #F7F7F7;
+    border-radius: 25px;
+    margin: 10px;
+}
+#reservation img {
+    width: 12%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+
+/********** FOOTER ***********/
+
+#infos {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.top-infos, .bottom-infos {
+    display: flex;
+    justify-content: center;
+}
+
+.half {
+    width: 50%;
+    max-width: 150px;
+    display: flex;
+    margin: 10px 15px;
+}
+
+.icon {
+    width: 12%;
+    min-width: 20px;
+    margin: 5px;
+}
+
+.icon img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    width: 100%;
+}
+
+.content h3 {
+    font-size: 0.8rem;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.content p {
+    font-size: 0.6rem;
+}
+
+.day {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#copyright {
+    background-color: #121415;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/********* RESPONSIVE *********/
+@media screen and (min-width: 768px) {
+    .divider {
+        width: 30%;
+        margin: 0 auto;
+        border: 1px solid #F7F7F7;
+    }
+    #menu {
+        display: flex;
+        height: 500px;
+    }
+    #soft-drink, #strong-drink {
+        font-size: 1.2rem;
+        border-radius: 28px;
+        margin: 10px;
+    }
+    #soft-drink-overlay, #strong-drink-overlay {
+        border-radius: 28px;
+    }
+    .title {
+        font-size: 1.6rem;
+        margin: 0 0 40px 0;
+    }
+    #soft-drink-list, #strong-drink-list {
+        width: 80%;
+    }
+    #reservation {
+        background-color: initial;
+        padding: 40px 20px;
+    }
+    #reservation a {
+        background-color: #212836;
+    }
+    footer {
+        background-color: #212836;
+        margin-top: 50px;
+    }
+    #infos {
+        width: 100%;
+        max-width:500px;
+        margin: 30px auto;
+        padding-top: 30px;
+    }
+    .half {
+        max-width: 200px;
+    }
+    .content h3 {
+        font-size: 1.1rem;
+    }
+    .content p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 100vh;
+    }
+    .logo-desktop {
+        display: block;
+    }
+    .logo-mobile {
+        display: none;
+    }
+    .main-title {
+        font-size: 7rem;
+    }
+    nav {
+        justify-content: flex-end;
+        top: 10px;
+    }
+    nav li {
+        font-size: 1.6rem;
+    }
+    nav li:nth-child(2n) {
+        padding: 0 2rem;
+        margin: 0 2rem;
+    }
+    #menu {
+        display: flex;
+        height: 800px;
+    }
+    #soft-drink, #strong-drink {
+        font-size: 1.8rem;
+    }
+    .title {
+        font-size: 2.2rem;
+        margin: 0 0 100px 0;
+    }
+    #soft-drink-list, #strong-drink-list {
+        width: 70%;
+    }
+    #infos {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0;
+        padding-bottom: 30px;
+    }
+    .top-infos, .bottom-infos {
+        width: 50%;
+        max-width: 500px;
+        margin: 0 10px;
+    }
+    .half {
+        max-width: 250px;
+    }
+    .content h3 {
+        font-size: 1.2rem;
+    }
+    .content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    .main-title {
+        font-size: 9rem;
+    }
+}
